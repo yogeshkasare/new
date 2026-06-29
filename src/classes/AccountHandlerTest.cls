@@ -8,7 +8,7 @@ private class AccountHandlerTest {
         Account acc = AccountHandler.createAccount(testName);
         Test.stopTest();
 
-        // Verify the account was inserted
+        // Verify the account was inse
         Account inserted = [SELECT Id, Name FROM Account WHERE Id = :acc.Id];
         System.assertEquals(testName, inserted.Name);
     }
