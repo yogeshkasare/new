@@ -1,0 +1,367 @@
+{
+  "_id": "6a3cc923ad53ec9de5b86a9a",
+  "name": "Blank Pipeline Template 82",
+  "description": "Create a new template from scratch.",
+  "owner": "68c10683f83c8f3eb99e9c8f",
+  "roles": [
+    {
+      "role": "administrator",
+      "user": "yogesh.kasare@proton.me",
+      "group": null
+    }
+  ],
+  "tags": [],
+  "type": [],
+  "organizationName": "opsera protonmail test account",
+  "account": "org109-acc",
+  "project": {
+    "name": "",
+    "project_id": ""
+  },
+  "workflow": {
+    "source": {
+      "name": "",
+      "service": "github",
+      "accountId": "682f039eee8c55ffd81561bc",
+      "workspace": "",
+      "workspaceName": "",
+      "repository": "new",
+      "repoId": "yogeshkasare/new",
+      "projectId": "yogeshkasare/new",
+      "gitUrl": "https://github.com/yogeshkasare/new",
+      "sshUrl": "git@github.com:yogeshkasare/new.git",
+      "branch": "main",
+      "secondary_branches": [],
+      "key": "",
+      "trigger_active": false,
+      "isPushEvent": true,
+      "isPrEvent": false,
+      "isMonitored": false,
+      "sendStepUpdates": false,
+      "prCreatedEvent": true,
+      "prApprovedEvent": false,
+      "gitExportEnabled": true,
+      "gitExportPath": "src/classes",
+      "dynamicSettings": false,
+      "allowDynamicSettingsInUi": false,
+      "allowPipelineParametersInUi": false,
+      "allowDynamicSettingsInSalesforceUi": false,
+      "enableBranchSwitch": false,
+      "opseraEdgeToolId": "",
+      "useOpseraEdgeProxy": false,
+      "baselineFromSuccessfulRun": false,
+      "branch_pattern": [],
+      "autoPopulateToSteps": false,
+      "isPathFilterEnabled": false,
+      "include_paths": [],
+      "exclude_paths": []
+    },
+    "plan": [
+      {
+        "tool": {
+          "tool_identifier": "command-line",
+          "configuration": {
+            "type": "",
+            "jobType": "SHELL SCRIPT",
+            "toolConfigId": "642fa4756736ad0088b81da8",
+            "toolName": "qa_Jenkins test_DO NOT DELETE",
+            "jobName": "SHELL_SCRIPT_V2_6a3cc923ad53ec9de5b86a9a_6a3cd3928ca599aaa7ee9bcf",
+            "toolJobId": "648ff5637055e50060c8b48a",
+            "projectId": "",
+            "buildType": "others",
+            "gitToolId": "",
+            "repoId": "",
+            "gitUrl": "",
+            "sshUrl": "",
+            "service": "",
+            "gitCredential": "",
+            "workspace": "",
+            "workspaceName": "",
+            "repository": "",
+            "gitBranch": "",
+            "agentLabels": "generic-linux",
+            "autoScaleEnable": true,
+            "outputPath": "",
+            "outputFileName": "",
+            "dependencyType": "",
+            "workspaceDeleteFlag": false,
+            "sourceScript": false,
+            "inputPath": "",
+            "inputFileName": "",
+            "relativePath": "",
+            "commands": "#!/bin/bash\nset -euo pipefail\n\necho \"Assigning value to opsera_paramter_output...\"\n\n# Example value assignment\nopsera_paramter_output=\"Pipeline run completed successfully\"\n\n# Export so it’s available to subsequent steps\nexport opsera_paramter_output\n\n# Print to confirm\necho \"opsera_paramter_output=$opsera_paramter_output\"",
+            "terraformStepId": "",
+            "customParameters": [],
+            "outputCustomParameters": [
+              {
+                "parameterId": "6a3cc98fe06fc251c4f3c8f5",
+                "parameterName": "opsera-paramter-output"
+              },
+              {
+                "parameterId": "6a3cd1e65148d1f739ba2f91",
+                "parameterName": "opsera-tag-opsera"
+              }
+            ],
+            "stepParameters": [],
+            "useTerraformOutput": false,
+            "sonarScanFlag": false,
+            "saveSonarParameters": false,
+            "sonarCustomParameters": [],
+            "sonarToolConfigId": "",
+            "projectKey": "",
+            "saveEnvironmentVariables": false,
+            "environmentVariables": [],
+            "clientSideThreshold": false,
+            "thresholdCompliance": [],
+            "thresholdRating": [],
+            "reportDetailsFlag": false,
+            "reportPath": "",
+            "reportFileName": "",
+            "scriptType": "inline",
+            "scriptId": "",
+            "overrideStartWorkflowValues": false,
+            "commandLineExecutionEngine": "jenkins",
+            "isJenkinsStepEntitlementEnabled": false,
+            "toolJobName": "Shell Script"
+          },
+          "threshold": {
+            "type": "",
+            "value": ""
+          },
+          "job_type": "shell script"
+        },
+        "last_status": {
+          "data": {
+            "jenkinsConsoleLog": "",
+            "buildTime": "2026-06-25 07.52 AM",
+            "runCount": 8,
+            "action": "START",
+            "hasDowloadableReport": false,
+            "gitUrl": "",
+            "gitBranch": "",
+            "repository": "",
+            "status": "SUCCESS",
+            "message": "Job is Successful",
+            "buildNumber": 4,
+            "jobName": "SHELL_SCRIPT_V2_6a3cc923ad53ec9de5b86a9a_6a3cd3928ca599aaa7ee9bcf"
+          },
+          "updatedAt": "2026-06-25T07:53:31.117Z"
+        },
+        "name": "command line",
+        "description": "",
+        "trigger": [],
+        "type": [
+          "script"
+        ],
+        "orchestration_type": "standard",
+        "notification": [],
+        "tags": [],
+        "active": false,
+        "dependencies": [],
+        "updatedAt": "2026-06-25T07:06:58.963Z",
+        "_id": "6a3cd3928ca599aaa7ee9bcf"
+      },
+      {
+        "name": "name",
+        "description": "",
+        "tool": {
+          "tool_identifier": "command-line",
+          "configuration": {
+            "type": "github",
+            "jobType": "SHELL SCRIPT",
+            "toolConfigId": "650ca087dbaa4500111e1618",
+            "toolName": "qa_Jenkins Prod DO NOT DELETE",
+            "jobName": "SHELL_SCRIPT_V2_6a3cc923ad53ec9de5b86a9a_6a3cd864e06fc251c4f4194b",
+            "toolJobId": "6524677eac5f650aec87ee44",
+            "projectId": "",
+            "buildType": "others",
+            "gitToolId": "682f039eee8c55ffd81561bc",
+            "repoId": "yogeshkasare/new",
+            "gitUrl": "https://github.com/yogeshkasare/new",
+            "sshUrl": "git@github.com:yogeshkasare/new.git",
+            "service": "github",
+            "gitCredential": "yogeshkasare",
+            "workspace": "",
+            "workspaceName": "",
+            "repository": "new",
+            "gitBranch": "main",
+            "agentLabels": "",
+            "autoScaleEnable": true,
+            "outputPath": "",
+            "outputFileName": "",
+            "dependencyType": "",
+            "workspaceDeleteFlag": false,
+            "sourceScript": false,
+            "inputPath": "",
+            "inputFileName": "",
+            "relativePath": "",
+            "commands": "echo \"${opsera-tag-opsera} hii\"",
+            "terraformStepId": "",
+            "customParameters": [
+              {
+                "parameterId": "6a3cd1e65148d1f739ba2f91",
+                "parameterName": "opsera-tag-opsera"
+              },
+              {
+                "parameterName": "opsera-paramter-output",
+                "parameterId": "6a3cc98fe06fc251c4f3c8f5"
+              }
+            ],
+            "outputCustomParameters": [],
+            "stepParameters": [],
+            "useTerraformOutput": false,
+            "sonarScanFlag": false,
+            "saveSonarParameters": false,
+            "sonarCustomParameters": [],
+            "sonarToolConfigId": "",
+            "projectKey": "",
+            "saveEnvironmentVariables": false,
+            "environmentVariables": [],
+            "clientSideThreshold": false,
+            "thresholdCompliance": [],
+            "thresholdRating": [],
+            "reportDetailsFlag": false,
+            "reportPath": "",
+            "reportFileName": "",
+            "scriptType": "inline",
+            "scriptId": "",
+            "overrideStartWorkflowValues": false,
+            "commandLineExecutionEngine": "jenkins",
+            "isJenkinsStepEntitlementEnabled": false,
+            "toolJobName": "Shell Script"
+          },
+          "threshold": {
+            "type": "",
+            "value": ""
+          },
+          "job_type": "shell script"
+        },
+        "trigger": [],
+        "type": [
+          "script"
+        ],
+        "orchestration_type": "standard",
+        "notification": [],
+        "tags": [],
+        "last_status": {
+          "data": {
+            "jenkinsConsoleLog": "",
+            "buildTime": "2026-06-29 03.04 AM",
+            "runCount": 14,
+            "action": "START",
+            "gitCommitId": "e437e847413557376a2d4bfd0bc53e751e84e411",
+            "hasDowloadableReport": false,
+            "gitUrl": "https://github.com/yogeshkasare/new",
+            "artifact": "parameter.txt",
+            "gitBranch": "main",
+            "repository": "new",
+            "status": "FAILURE",
+            "message": "Job is Failed",
+            "buildNumber": 7,
+            "jobName": "SHELL_SCRIPT_V2_6a3cc923ad53ec9de5b86a9a_6a3cd864e06fc251c4f4194b"
+          },
+          "updatedAt": "2026-06-29T03:04:52.346Z"
+        },
+        "active": true,
+        "dependencies": [
+          "6a3cd3928ca599aaa7ee9bcf"
+        ],
+        "updatedAt": "2026-06-25T07:27:32.366Z",
+        "_id": "6a3cd864e06fc251c4f4194b"
+      }
+    ],
+    "schedule": {
+      "start_date": null,
+      "end_date": null,
+      "frequency": ""
+    },
+    "last_step": {
+      "status": "stopped",
+      "check_count": 1,
+      "step_id": "6a3cd864e06fc251c4f4194b"
+    },
+    "run_count": 14,
+    "last_run": {
+      "status": "failed",
+      "completed": "2026-06-29T03:05:10.937Z",
+      "run_count": 14
+    },
+    "canvas_layout": {
+      "manual_layout_active": true,
+      "orientations": {
+        "vertical": {
+          "start": {
+            "x": 0,
+            "y": 30
+          },
+          "6a3cd3928ca599aaa7ee9bcf": {
+            "x": 0,
+            "y": 270
+          },
+          "6a3cd864e06fc251c4f4194b": {
+            "x": 0,
+            "y": 540
+          },
+          "end": {
+            "x": 0,
+            "y": 810
+          }
+        }
+      },
+      "updated_at": "2026-06-25T08:13:11.476Z"
+    }
+  },
+  "active": true,
+  "template": "5ec7c8cedc73d9532e860b67",
+  "templateIdentifier": "blank_pipeline_template",
+  "notification": [],
+  "notificationRules": [],
+  "createdAt": "2026-06-25T06:22:27.982Z",
+  "updatedAt": "2026-06-29T03:06:52.577Z",
+  "__v": 16,
+  "owner_name": "Yogesh.Kasare Proton",
+  "parameters": [
+    {
+      "name": "opsera-paramter-output",
+      "value": "Pipeline run completed successfully",
+      "scope": "pipeline",
+      "inputType": "text",
+      "vaultEnabled": false,
+      "vaultKey": "",
+      "selectField": false,
+      "lookupListId": "",
+      "tags": [],
+      "account": "org109-acc",
+      "active": true,
+      "__v": 0
+    },
+    {
+      "name": "opsera-tag-opsera",
+      "value": "",
+      "scope": "pipeline",
+      "inputType": "text",
+      "vaultEnabled": false,
+      "vaultKey": "",
+      "selectField": false,
+      "lookupListId": "",
+      "tags": [],
+      "account": "org109-acc",
+      "active": true,
+      "__v": 0
+    },
+    {
+      "name": "opsera-newest",
+      "value": "",
+      "scope": "pipeline",
+      "inputType": "encrypted_text",
+      "vaultEnabled": true,
+      "vaultKey": "",
+      "selectField": false,
+      "lookupListId": "",
+      "tags": [],
+      "account": "org109-acc",
+      "active": true,
+      "__v": 0
+    }
+  ]
+}
